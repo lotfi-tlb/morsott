@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daira morsott</title>
+    <link rel="shortcut icon" href="img/daira-morsott-map.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style1.css">
+
+    <style>
+        h2 {
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+            /* background-color: thistle; */
+        }
+
+        .page-link {
+            color: rgb(255, 36, 36);
+        }
+
+        .page-item.active .page-link {
+            color: #fff;
+            background-color: #ff0c00;
+            border-color: #ffffff;
+        }
+
+        #sites1 a,
+        #sites2 a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        #sites3 a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Responsive web site -->
+    <!--background-color: #f13232 !important;-->
+
+    <nav style="" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="img/daira-morsott-map.svg" width="30" height="30" class="d-inline-block align-top" alt=""
+                loading="lazy">
+            Daira Morsott
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div style="justify-content: flex-start;" class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Service biométrie
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#!">Passeport</a>
+                        <a class="dropdown-item" href="#!">CNIBE</a>
+                        <a class="dropdown-item" href="#!">Permis de conduire</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="bg-secondary pb-3 pt-3">
+        <article style="display: flex; justify-content: center; ">
+            <div style="max-width: 500px; width: 100%;" id="carouselExampleIndicators" class="carousel slide pb-3 mx-3"
+                data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div style="height: 300px;" class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/centre-ville.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/porte-caracalla.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/univ-tebessa.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </article>
+
+        <article style="display: flex; justify-content: center">
+            <div style="max-width: 900px;" class="card-deck">
+                <div class="card" style=";">
+                    <img style="height: 12rem;" src="img/daira-morsott.jpg" class="card-img-top" alt="...">
+                    <div class="card-body bg-light">
+                        <p class="card-text text-justify">Daira de Morsott se compose de deux communes : Morsott et
+                            Birdheb.</p>
+                    </div>
+                </div>
+                <div class="card" style=";">
+                    <img style="height: 12rem;" src="img/tebessa2.png" class="card-img-top" alt="...">
+                    <div class="card-body bg-light">
+                        <p class="card-text text-justify">Wilaya de Tébessa situé à 30 km de la daira de Morsott.</p>
+                    </div>
+                </div>
+                <div class="card" style="">
+                    <img style="height: 12rem;" src="img/interieur1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body bg-light">
+                        <p class="card-text text-justify">Ministère de l'intérieur, des collectivités locales et de
+                            l'aménagement du
+                            territoire.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background-color:rgb(124, 114, 114);" class="page-footer font-small blue pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Daira de Morsott</h5>
+                    <p>Daira de Morsott est l'une des 12 dairates de la wilaya de Tébessa, se situe à 30 km au nord du
+                        siège wilaya sur la route nationale N° 16 .</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-capitalize">sites</h5>
+
+                    <ul id="sites1" class="list-unstyled">
+                        <li>
+                            <a href="http://www.wilaya-tebessa.dz" target="_blank">www.wilaya-tebessa.dz</a>
+                        </li>
+                        <li>
+                            <a href="http://www.interieur.gov.dz" target="_blank">www.interieur.gov.dz</a>
+                        </li>
+                        <li>
+                            <a href="http://www.premier-ministre.gov.dz" target="_blank">www.premier-ministre.gov.dz</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-capitalize">E-mail / Tel</h5>
+
+                    <ul id="sites2" class="list-unstyled">
+                        <li>
+                            <a href="mailto:l_toualbia@esi.dz">l_toualbia@esi.dz</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/toualbialotfi"
+                                target="_blanc">www.facebook.com/toualbialotfi</a>
+                        </li>
+                        <li>
+                            <a href="#!">06 70 25 22 66</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div id="sites3" class="footer-copyright text-center py-3">
+            <span class="font-weight-bold">© 2020 Copyright :</span>
+            <a href="https://www.dairamorsott.dz/">www.dairamorsott.dz
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- javascript for bootstrap -->
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+</body>
+
+</html>

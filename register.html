@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="shortcut icon" href="img/daira-morsott-map.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<style>
+    h2 {
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+        /* background-color: thistle; */
+    }
+
+    .page-link {
+        color: rgb(255, 36, 36);
+    }
+
+    .page-item.active .page-link {
+        color: #fff;
+        background-color: #ff0c00;
+        border-color: #ffffff;
+    }
+
+    #sites1 a,
+    #sites2 a {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+    #sites3 a {
+        text-decoration: none;
+        color: black;
+    }
+</style>
+
+<body>
+
+    <nav style="" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="img/daira-morsott-map.svg" width="30" height="30" class="d-inline-block align-top" alt=""
+                loading="lazy">
+            Daira Morsott
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div style="justify-content: flex-start;" class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Service biométrie
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#!">Passeport</a>
+                        <a class="dropdown-item" href="#!">CNIBE</a>
+                        <a class="dropdown-item" href="#!">Permis de conduire</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#!">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main style="display: flex; justify-content: center;">
+        <!-- Default form register -->
+        <form style="max-width: 650px; width: 100%; margin: 20px 10px; border-radius: 8px;"
+            class="text-center border border-secondary p-4" action="#!">
+
+            <p class="h4 mb-4">Sign up</p>
+
+            <div class="form-row mb-4">
+                <div class="col">
+                    <!-- First name -->
+                    <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                    <!-- Last name -->
+                    <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+
+            <!-- E-mail -->
+            <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+            <!-- Password -->
+            <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password"
+                aria-describedby="defaultRegisterFormPasswordHelpBlock">
+            <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                At least 8 characters and 1 digit
+            </small>
+
+            <!-- Phone number -->
+            <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number"
+                aria-describedby="defaultRegisterFormPhoneHelpBlock">
+            <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+                Optional - for two step authentication
+            </small>
+
+            <!-- Newsletter -->
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+                <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our
+                    newsletter</label>
+            </div>
+
+            <!-- Sign up button -->
+            <button class="btn btn-info my-4 btn-block bg-dark" type="submit">Sign in</button>
+
+            <!-- Sign in -->
+            <p>A member ?
+                <a href="login.html">Login</a>
+            </p>
+
+            <!-- Social register -->
+            <p>or sign up with :</p>
+
+            <a href="https://www.facebook.com/toualbialotfi" target="_blank" class="mx-2" role="button"><i
+                    class="fab fa-facebook-f light-blue-text"></i></a>
+            <a href="#!" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
+            <a href="https://www.linkedin.com/in/mag-toualbia-lotfi-64b27685/" target="_blank" class="mx-2"
+                role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
+            <a href="#!" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
+
+            <hr>
+
+            <!-- Terms of service -->
+            <p>By clicking
+                <em>Sign up</em> you agree to our
+                <a href="#!" target="_blank">terms of service</a>
+
+        </form>
+        <!-- Default form register -->
+    </main>
+
+    <!-- Footer -->
+    <footer style="background-color:rgb(124, 114, 114) !important;" class="page-footer font-small blue pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Daira de Morsott</h5>
+                    <p>Daira de Morsott est l'une des 12 dairates de la wilaya de Tébessa, se situe à 30 km au nord du
+                        siège wilaya sur la route nationale N° 16 .</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-capitalize">sites</h5>
+
+                    <ul id="sites1" class="list-unstyled">
+                        <li>
+                            <a href="http://www.wilaya-tebessa.dz" target="_blank">www.wilaya-tebessa.dz</a>
+                        </li>
+                        <li>
+                            <a href="http://www.interieur.gov.dz" target="_blank">www.interieur.gov.dz</a>
+                        </li>
+                        <li>
+                            <a href="http://www.premier-ministre.gov.dz" target="_blank">www.premier-ministre.gov.dz</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-capitalize">E-mail / Tel</h5>
+
+                    <ul id="sites2" class="list-unstyled">
+                        <li>
+                            <a href="mailto:l_toualbia@esi.dz">l_toualbia@esi.dz</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/toualbialotfi"
+                                target="_blanc">www.facebook.com/toualbialotfi</a>
+                        </li>
+                        <li>
+                            <a href="#!">06 70 25 22 66</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div id="sites3" class="footer-copyright text-center py-3">
+            <span class="font-weight-bold">© 2020 Copyright :</span>
+            <a href="https://www.dairamorsott.dz/">www.dairamorsott.dz
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- javascript for bootstrap -->
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+</body>
+
+</html>
